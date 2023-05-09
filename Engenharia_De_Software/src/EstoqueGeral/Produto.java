@@ -1,12 +1,12 @@
 public class Produto {
 
-String nomeProduto;
- String descrição;
- int códigoProduto;
- Double preço;
-Categoria catego;
-Localização Local;
-Fabricante Marca;
+	String nomeProduto;
+	String descrição;
+	int códigoProduto;
+	Double preço;
+	Categoria catego;
+	Localização Local;
+	Fabricante Marca;
 
 public Produto(String nomeProduto,  String descrição, int códigoProduto, double preço){
     this.nomeProduto = nomeProduto;

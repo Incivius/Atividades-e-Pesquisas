@@ -1,10 +1,6 @@
 //exercicio 1, 2 
 
-
-
-
 import java.util.Scanner;
-
 public class Vetor1 {
 	
 	public static void main(String[] args) {
@@ -35,7 +31,7 @@ public class Vetor1 {
 				 posiçãoM = i;
 			}
 		}
-		System.out.printf("O resultado da operaçaõ ficou em: \n Maior valor = %d, posicao %d -  \n Menor valor = %d, posicao %d \n A soma ficou em: %d", maior, posiçãoM, menor, posiçãoN, soma);
+		System.out.printf("O resultado da operação ficou em: \n Maior valor = %d, posicao %d -  \n Menor valor = %d, posicao %d \n A soma ficou em: %d", maior, posiçãoM, menor, posiçãoN, soma);
 		
 	}
 		 

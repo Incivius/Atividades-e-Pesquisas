@@ -14,6 +14,13 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>API2Semestre</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/API/API2Semestre</locationURI>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1680447069778</id>
