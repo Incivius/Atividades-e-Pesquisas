@@ -19,4 +19,8 @@
         return naipe;
     }
 
+    public String VerCarta(){
+        return "Nome: " + this.nome + " Naipe: " + this.naipe;
+    }
+
  }
