@@ -2,11 +2,11 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Baralho {
-    private int total = 4;
+    private int total = 56;
     private Carta[] cartas =  new Carta[total];
 
     public Baralho(){
-        this.cartas = Escolha();
+        this.cartas = Preencher();
     }
 
     public void embaralharBaralho(){
@@ -17,25 +17,43 @@ public class Baralho {
         }
     }
 
-    public Carta[] Escolha(){
-        EnumCarta[] nome = EnumCarta.values();
-        EnumNaipe[] naipe = EnumNaipe.values();
-            for (int i = 0; i < total; i++){
-                
+    public Carta distribuirCarta(Baralho baralho){
+            for (int i = total; i == 0; i--) {
+                if (cartas[i] != null) {
+                    return cartas[i];
+                    cartas[i] = null;
+                    break;
 
+                }
+        }
+    }
+    
+    public Carta[] Preencher(){
+        EnumCarta[ ] deck = EnumCarta.values();
+            for (int j = 0; j <= 13; j++){
+                cartas[j] = new Carta(deck[j], EnumNaipe.COPAS);
+                System.out.println(cartas[j].getNome() + " " + cartas[j].getNaipe());
             }
-            Carta card = new Carta(EnumCarta.A, EnumNaipe.COPAS);
+            for (int j = 0; j <= 13; j++){
+                cartas[j + 13] = new Carta(deck[j], EnumNaipe.PAUS);
+                System.out.println(cartas[j + 13].getNome()+ " " + cartas[j + 13].getNaipe());
+            }
+            for (int j = 0; j <= 13; j++){
+                cartas[j + 26] = new Carta(deck[j], EnumNaipe.ESPADAS);
+                System.out.println(cartas[j + 26].getNome() + " " + cartas[j + 26].getNaipe());
+            }
+            for (int j = 0; j <= 13; j++){
+                cartas[j + 39] = new Carta(deck[j], EnumNaipe.OUROS);
+                System.out.println(cartas[j + 39].getNome() + " " + cartas[j + 39].getNaipe());
+            }
+            for (int j = 0; j <= total; j++){
+                if (cartas[j].getNome().equals(EnumCarta.CORINGA)){
+                    cartas[j].setNaipe(EnumNaipe.CORINGA);
+                }
+            }
+
             return cartas;
         }
-    
-    public Carta distribuirCarta(){
-        for (int i = 0; i < total; i++) {
-            if (cartas[total-(i+1)] != null) {
-                Carta cartaUltima = cartas[total-(i+1)];
-                cartas[total-(i+1)] = null;
-                return cartaUltima;
-            }
-        }
-    return null;
-    }   
+
+        public 
 }

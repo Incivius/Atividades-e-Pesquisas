@@ -12,7 +12,7 @@
     public EnumCarta getNome(){
         return nome;
     }
-    public void getNaipe(EnumNaipe naipe){
+    public void setNaipe(EnumNaipe naipe){
         this.naipe = naipe;
     }
     public EnumNaipe getNaipe(){

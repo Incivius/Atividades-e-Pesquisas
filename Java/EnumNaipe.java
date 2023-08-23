@@ -1,5 +1,5 @@
 public enum EnumNaipe {
-    COPAS, ESPADAS, PAUS, OUROS;
+    COPAS, ESPADAS, PAUS, OUROS, CORINGA;
 
 
     
